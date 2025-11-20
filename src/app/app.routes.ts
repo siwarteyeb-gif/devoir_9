@@ -7,6 +7,7 @@ import { RechercheParNom } from './recherche-par-nom/recherche-par-nom';
 import { Login } from './login/login';
 import { Forbidden } from './forbidden/forbidden';
 import { parfumGuard } from './parfum-guard';
+import { Logout } from './logout/logout';
 
 export const routes: Routes = [
     {path: "parfums", component :Parfums},
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path : "rechercheParNom",component:RechercheParNom} ,
     {path: 'login', component: Login},
     {path: 'app-forbidden', component: Forbidden},
+    {path:'logout',component:Logout},
     {path: "", redirectTo: "parfums", pathMatch: "full"}
 
 ];
